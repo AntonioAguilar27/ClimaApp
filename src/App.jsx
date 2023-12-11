@@ -1,9 +1,15 @@
 import Appclima from "./components/Appclima"
+import { ClimaProvider } from "./context/ClimaProvider"
 function App() {
 
 
   return (
-    <Appclima/>
+    <ClimaProvider>
+      <header>
+        <h1>Buscador de clima</h1>
+      </header>
+         <Appclima/>
+    </ClimaProvider>
   )
 }
 
